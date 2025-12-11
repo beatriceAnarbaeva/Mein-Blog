@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Mein Blog</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="bg-success text-white text-center py-5">
+  <h1>Beatrice Blog</h1>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">Home</a>
+  <a class="navbar-brand" href="essen.html">Essensgewohnheiten</a>
+  <a class="navbar-brand" href="Katze.html">Katze</a>
+  <a class="navbar-brand" href="Bilderkarussel.html">BilderKarussell</a>
+</nav>
+
+<!-- Musik -->
+<audio id="bg-music" loop>
+  <source src="Musik/1.mp3" type="audio/mpeg">
+</audio>
+
+<div class="text-center my-4">
+  <button id="music-btn" class="btn btn-outline-primary">🎵 Musik starten</button>
+</div>
+
+<script src="js/musik.js"></script>
+
+<div class="container mt-4">
+  <h2>Willkommen auf der Seite was ich gerne esse. Viel Spaß!</h2>
+</div>
+
+<!-- ESSEN-KARTEN -->
+<div class="container mt-4">
+
+  <!-- CARD 1 -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <h4 class="card-title">Tag 21. Oktober 2025</h4>
+      <p><strong>Uhrzeit:</strong> 21.00 Uhr</p>
+      <p><strong>Rezept:</strong> Brownie</p>
+      <img src="Bilder/brownie.jfif" class="img-fluid" width="700">
+
+      <!-- Bewertung + Kommentare -->
+      <div class="mt-3">
+        <div class="stars" data-id="1">★ ★ ★ ★ ★</div>
+        <div class="rating-count" id="rating-count-1">Bewertung: 0 Sterne</div>
+      </div>
+
+      <div class="comment-section mt-2" data-id="1">
+        <h5>Kommentare</h5>
+        <div class="comments-list" id="comments-1"></div>
+
+        <textarea class="form-control mt-2" rows="2" placeholder="Kommentar schreiben..."></textarea>
+        <button class="btn btn-primary btn-sm mt-2 submit-comment">Absenden</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <h4 class="card-title">Tag 27. Januar 2024</h4>
+      <p><strong>Uhrzeit:</strong> 17.00 Uhr</p>
+      <p><strong>Rezept:</strong> Sushi</p>
+      <img src="Bilder/sushi.jfif" class="img-fluid" width="700">
+
+      <div class="mt-3">
+        <div class="stars" data-id="2">★ ★ ★ ★ ★</div>
+        <div class="rating-count" id="rating-count-2">Bewertung: 0 Sterne</div>
+      </div>
+
+      <div class="comment-section mt-2" data-id="2">
+        <h5>Kommentare</h5>
+        <div class="comments-list" id="comments-2"></div>
+
+        <textarea class="form-control mt-2" rows="2" placeholder="Kommentar schreiben..."></textarea>
+        <button class="btn btn-primary btn-sm mt-2 submit-comment">Absenden</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <h4 class="card-title">Tag August 2025</h4>
+      <p><strong>Uhrzeit:</strong> 15.00 Uhr</p>
+      <p><strong>Rezept:</strong> Schnitzery</p>
+      <img src="Bilder/schnitzery.jfif" class="img-fluid" width="700">
+
+      <div class="mt-3">
+        <div class="stars" data-id="3">★ ★ ★ ★ ★</div>
+        <div class="rating-count" id="rating-count-3">Bewertung: 0 Sterne</div>
+      </div>
+
+      <div class="comment-section mt-2" data-id="3">
+        <h5>Kommentare</h5>
+        <div class="comments-list" id="comments-3"></div>
+
+        <textarea class="form-control mt-2" rows="2" placeholder="Kommentar schreiben..."></textarea>
+        <button class="btn btn-primary btn-sm mt-2 submit-comment">Absenden</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2025 Mein Blog</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Kommentare -->
+<script src="comment.js"></script>
+
+</body>
+</html>
+
+

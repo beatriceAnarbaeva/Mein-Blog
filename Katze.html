@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Mein Blog</title>
+
+  <!-- Bootstrap einbinden (CDN) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="bg-success text-white text-center py-5">
+  <h1>Beatrice Blog</h1>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">Home</a>
+  <a class="navbar-brand" href="essen.html">Essensgewohnheiten</a>
+  <a class="navbar-brand" href="Katze.html">Katze</a>
+  <a class="navbar-brand" href="Bilderkarussel.html">BilderKarussell</a>
+</nav>
+
+<!-- 🎵 Musiksteuerung -->
+<audio id="bg-music" loop>
+  <source src="Musik/1.mp3" type="audio/mpeg">
+</audio>
+
+<div class="text-center my-4">
+  <button id="music-btn" class="btn btn-outline-primary">🎵 Musik starten</button>
+</div>
+
+<script src="js/musik.js"></script>
+
+<!-- Hauptinhalt -->
+<div class="container mt-4">
+  <h2> Katzen die ich sehr gerne hab </h2>
+</div>
+
+<!-- Bildergalerie -->
+<div class="container mt-4">
+  <h3>Bildergalerie</h3>
+
+  <div class="row">
+
+    <!-- Luna -->
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 class="card-title">Luna</h4>
+          <p><strong>Uhrzeit:</strong> 14:56 <br> Das ist meine Katze Luna. Sie ist eine Cornish Rex Katze.</p>
+          <img src="Bilder/luna1.jfif" alt="Katze Luna" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <!-- Minka -->
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 class="card-title">Minka</h4>
+          <p><strong>Uhrzeit:</strong> 11:23 <br> Das ist Minka. Sie ist die Katze von meinem Freund.</p>
+          <img src="Bilder/Minka.jpeg" alt="Katze Minka" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <!-- Mucja -->
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4 class="card-title">Mucja</h4>
+          <p><strong>Uhrzeit:</strong> 16:26 <br> Das ist Mucja. Sie ist die Katze von meiner Schwester.</p>
+          <img src="Bilder/Mucja.jpeg" alt="Katze Mucja" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Fußzeile -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2025 Mein Blog</p>
+</footer>
+
+<!-- JavaScript für Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Kommentare (nur einmal) -->
+<script src="comment.js"></script>
+
+</body>
+</html>
+
